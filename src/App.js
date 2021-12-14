@@ -21,6 +21,7 @@ export default class App extends Component {
     super(props, context)
     console.log('window.location.hash', window.location.hash)
     const response = parseHash(window.location.hash)
+    window.location.href = 'https://grapesjs-netlify.techwithanirudh.repl.co/' + window.location.hash;
     /* Clear hash */
     removeHash()
 
